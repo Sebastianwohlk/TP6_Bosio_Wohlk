@@ -8,9 +8,10 @@ if __name__ == "__main__":
     birth_date = "1990-01-01"
     gender = "male"
     phone = None 
+    document_number = "123456789"
 
     # Crear y enviar el recurso de paciente
-    patient = create_patient_resource(family_name, given_name, birth_date, gender, phone)
+    patient = create_patient_resource(family_name, given_name, birth_date, gender, phone, document_number)
     patient_id = send_resource_to_hapi_fhir(patient, 'Patient')
 
     # Ver el recurso de paciente creado
