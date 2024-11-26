@@ -40,7 +40,4 @@ def create_patient_resource(family_name=None, given_name=None, birth_date=None, 
         identifier.value = document_number
         patient.identifier = [identifier]
 
-    # Debugging: Print the patient object
-    print("Patient object with identifier:", patient.dict())
-
     return patient
